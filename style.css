@@ -237,7 +237,7 @@ header .logo :hover {
     font-weight: 300;
 }
 
-.menu-mobile nav ul li .txt-icon:hover{
+.menu-mobile nav ul li a:hover{
     background-color: #00ff08;
     color: #000;
 }
@@ -628,7 +628,7 @@ footer .line-footer a {
 
     /* SOBRE-MIM */
     section.sobre .flex {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     section.sobre {

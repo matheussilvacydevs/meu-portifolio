@@ -3,10 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ICONE-DO-TOPO -->
+        <link rel="icon" type="image/png" href="/images/icones/icon32px.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/images/icones/icon48px.png" sizes="48x48">
+        <!-- FIM-ICONE-DO-TOPO -->
         <!--BOOTSTRAP ICONS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <!--FIM BOOTSTRAP ICONS-->
         <link rel="stylesheet" href="style.css">
+        <script src="menu.js" defer></script>
         <title>Meu-Portifolio</title>
     </head>
     <body>
@@ -15,7 +20,11 @@
 
             <div class="interface">
                 <div class="logo">
-                    <img src="images/MTS (2).svg" alt="Logo">
+                    <a class="container">
+                        <div class="upper">TEAM</div>
+                        <div class="lower"><span>CDEVS</span></div>
+                      </a>
+                    <!--<img src="images/MTS (2).svg" alt="Logo">-->
                 </div> <!--logo-->
                 <nav class="menu-desktop">
                     <ul>
@@ -24,18 +33,37 @@
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#portifolio">Projetos</a></li>
                     </ul>
-        
                 </nav>
                 <div class="btn-contato">
                     <a href="#">                 
-                        <button>Contato</button>
+                        <a href="mailto:matheussilva706@hotmail.com"><button>Contato</button></a>
                     </a>
                 </div> <!--btn-contato-->
+
+                <div class="btn-abrir-menu" id="btn-menu">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="menu-mobile" id="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#topo-do-site">Inicio</a></li>
+                            <li><a href="#especialidades">Especialidades</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#portifolio">Projetos</a></li>
+                            <li><a href="#sobre">Contato</a></li>
+
+                        </ul>
+                    </nav>
+                </div><!--menu-mobile-->
+                <div class="overlay-menu" id="overlay-menu"></div>
             </div> <!--interface-->        
         </header>
 
         <main>
-            <section class="topo-do-site" >
+            <section class="topo-do-site" id="topo-do-site">
                 <div class="interface">
                     <div class="flex">
                         <div class="txt-topo-site">
@@ -46,18 +74,18 @@
 
                                 <div class="btn-contato">
                                     <a href="#">
-                                        <button>Entre em Contato</button>
+                                        <a href="https://wa.me/+556592056618" target="_blank"><button>Meu WhatsApp</button></a>
                                     </a>
                                 </div> <!--btn-contato-->
                         </div><!--txt-topo-site-->
                         <div class="img-topo-site">
-                            <img src="images/NARUTO (2).svg" alt="Naruto">
+                            <img src="images/icones/pessoa.png" alt="Naruto">
                         </div><!--img-topo-site-->
                     </div><!--flex-->
                 </div><!--interface-->
             </section><!--topo-do-site-->
 
-            <section class="especialidades">
+            <section class="especialidades" id="especialidades" >
                 <div class="interface">
                     <h2 class="titulo" >MINHAS <span>ESPECIALIDADES.</span></h2>
                     <div class="flex">
@@ -83,7 +111,7 @@
                 </div><!--interface-->
             </section><!--especialidades-->
 
-            <section class="sobre">
+            <section class="sobre" id="sobre">
                 <div class="interface">
                     <div class="flex">
                         <div class="img-sobre">
@@ -100,34 +128,34 @@
                                 utilizando linguagens como JavaScript, Kotlin e Python. Essa diversidade de habilidades me permite 
                                 oferecer soluções completas e eficientes aos meus clientes, garantindo que suas necessidades sejam atendidas em todas as etapas do desenvolvimento.</p>
                                 <div class="btn-social">
-                                    <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                                    <a href="#"><button><i class="bi bi-github"></i></button></a>
-                                    <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                                    <a href="#"><button><i class="bi bi-envelope-paper"></i></button></a>
+                                    <a href="https://www.instagram.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/devstudding/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="mailto:matheussilva706@hotmail.com"><button><i class="bi bi-envelope-paper"></i></button></a>
                                 </div><!--btn-social-->
                             </div><!--txt-sobre--> 
                     </div><!--flex-->
                 </div><!--interface-->
             </section><!--sobre-->
 
-            <section class="portifolio">
+            <section class="portifolio" id="portifolio">
                 <div class="interface">
                     <h2 class="titulo" >MEU <span>PORTIFÓLIO.</span></h2>
                     <div class="flex">
-                        <div class="img-port" style="background-image: url(images/icones/imagem.jpg);" >
-                            <div class="overlay">Projeto 1</div>
+                        <div class="img-port" style="background-image: url(images/site-nft.png);" onclick="window.open('https://matheussilvacydevs.github.io/loja-nft/', '_blank')">
+                            <div class="overlay">Loja de NFTs</div>
                         </div>
-                        <div class="img-port" style="background-image: url(images/icones/imagem.jpg);" >
-                            <div class="overlay">Projeto 2</div>
+                        <div class="img-port" style="background-image: url(images/icones/Meu-portifolio.png);" onclick="window.open('https://cdevs.tech/', '_blank')"></div>                        
+                            <div class="overlay">Portifolio/div>
                         </div>
-                        <div class="img-port" style="background-image: url(images/icones/imagem.jpg);" >
-                            <div class="overlay">Projeto 3</div>
+                        <div class="img-port" style="background-image: url(images/icones/Marketing.png);" >
+                            <div class="overlay">Projeto Marketing</div>
                         </div>
                     </div>
                 </div>
             </section><!--portifolio-->
 
-            <section class="formulario">
+            <section class="formulario" >
                 <div class="interface">
                     <h2 class="titulo" >FALE <span>COMIGO.</span></h2>
                     <form action="">
@@ -146,18 +174,21 @@
                 <div class="line-footer">
                     <div class="flex">
                         <div class="logo-footer">
-                            <img src="images/MTS (2).svg" alt="Logo">
+                            <a class="container">
+                                <div class="upper">TEAM</div>
+                                <div class="lower"><span>CDEVS</span></div>
+                              </a>
                         </div><!--logo-footer-->
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-github"></i></button></a>
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="#"><button><i class="bi bi-envelope-paper"></i></button></a>
-                        </div><!--btn-social-->
-                </div><!--flex-->
+                            <a href="https://www.instagram.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/devstudding/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="mailto:matheussilva706@hotmail.com"><button><i class="bi bi-envelope-paper"></i></button></a>
+                        </div><!--btn-social-->                        
+                    </div><!--flex-->
                 </div><!--line-footer-->
                 <div class="line-footer borda">
-                    <p><i class="bi bi-envelope"></i><a href="mailto:MATHEUSSILVA706@HOTMAIL.COM">MATHEUSSILVA706@HOTMAIL.COM</a></p>
+                    <p>Copyright © 2024 Cyber devs Team, All Rights Reserved.</p>
                 </div><!--line-footer-borda-->
             </div><!--interface-->
         </footer>

@@ -12,7 +12,7 @@
         <!--FIM BOOTSTRAP ICONS-->
         <link rel="stylesheet" href="style.css">
         <script src="menu.js" defer></script>
-        <title>Portifólio</title>
+        <title>Meu-Portifolio</title>
     </head>
     <body>
 
@@ -49,13 +49,15 @@
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#topo-do-site">Inicio</a></li>
-                            <li><a href="#especialidades">Especialidades</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#portifolio">Projetos</a></li>
-                            <li><a href="#sobre">Contato</a></li>
-
+                            <li><a class="txt-icon" href="#topo-do-site">Início <i class="bi bi-house"></i></a></li>
+                            <li><a class="txt-icon" href="#especialidades">Especialidades <i class="bi bi-star"></i></a></li>
+                            <li><a class="txt-icon" href="#sobre">Sobre <i class="bi bi-info-circle"></i></a></li>
+                            <li><a class="txt-icon" href="#portifolio">Projetos <i class="bi bi-folder"></i></a></li>
+                            <li><a class="txt-icon" href="#contato">Contato <i class="bi bi-envelope"></i></a></li>
                         </ul>
+                    </nav>
+                                      
+                           
                     </nav>
                 </div><!--menu-mobile-->
                 <div class="overlay-menu" id="overlay-menu"></div>
@@ -113,10 +115,7 @@
 
             <section class="sobre" id="sobre">
                 <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="images/me-matheus.svg" alt="Matheus">
-                        </div><!--img-sobre-->
+                    <div class="flex">                  
                         <div class="txt-sobre">
                             <h2>MUITO PRAZER, <span>SOU MATHEUS SILVA.</span></h2>
                             <p>Como Desenvolvedor Web, trago uma paixão pela tecnologia e inovação para cada projeto que empreendo. 
@@ -134,6 +133,9 @@
                             <a href="mailto:matheussilva706@hotmail.com"><button><i class="bi bi-envelope-paper"></i></button></a>
                                 </div><!--btn-social-->
                             </div><!--txt-sobre--> 
+                            <div class="img-sobre">
+                                <img src="images/me-matheus.svg" alt="Matheus">
+                            </div><!--img-sobre-->
                     </div><!--flex-->
                 </div><!--interface-->
             </section><!--sobre-->
@@ -145,7 +147,7 @@
                         <div class="img-port" style="background-image: url(images/site-nft.png);" onclick="window.open('https://matheussilvacydevs.github.io/loja-nft/', '_blank')">
                             <div class="overlay">Loja de NFTs</div>
                         </div>
-                        <div class="img-port" style="background-image: url(images/icones/Meu-portifolio.png);" onclick="window.open('https://cdevs.tech/', '_blank')">
+                        <div class="img-port" style="background-image: url(images/icones/Meu-portifolio.png);" onclick="window.open('https://cdevs.tech/', '_blank')">       
                             <div class="overlay">Portifolio</div>
                         </div>
                         <div class="img-port" style="background-image: url(images/icones/Marketing.png);" >

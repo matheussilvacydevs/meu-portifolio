@@ -232,10 +232,16 @@ header .logo :hover {
     display: block;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a i{
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.menu-mobile nav ul li .txt-icon:hover{
     background-color: #00ff08;
     color: #000;
 }
+
 
 .overlay-menu{
     background-color: #000000ea;
@@ -299,6 +305,7 @@ section.topo-do-site .flex {
 
 /*ESTILO DAS ESPECIALIDADES*/
 section.especialidades {
+    box-shadow: 0 0 40px #00ff0821;
     padding: 40px 4%;
 }
 
@@ -338,6 +345,7 @@ section.especialidades .flex {
 
 /*ESTILO DO SOBRE*/
 section.sobre {
+    
     padding: 40px 4%;
 }
 
@@ -601,6 +609,21 @@ footer .line-footer a {
     /*ESTILO DAS ESPECIALIDADES*/
     section.especialidades {
         padding: 40px 8%;
+
+    }
+
+    section.especialidades .flex{
+        gap: 2px;
+    }
+
+    .especialidades .especialides-box {
+        color: #fff;
+        cursor: pointer;
+        padding: 40px;
+        text-align: justify;
+        margin-top: 45px;
+        border-radius: 20px;
+        transition: .2s;
     }
 
     /* SOBRE-MIM */
@@ -623,13 +646,22 @@ footer .line-footer a {
         text-align: center;
     }
 
-    .sobre .img-sobre {
+    section.sobre .flex {
+        display: block;
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    .sobre .img-sobre img {
+        margin-top: 18px;
         width: 100%;
     }
 
     /* PORTIFÓLIO */
+
+
     section.portifolio {
-        padding: 80px 8%;
+        padding: 50px 8%;
     }
 
     .img-port {
@@ -639,10 +671,15 @@ footer .line-footer a {
     }
 
     section.portifolio .flex {
-        gap: 60px;
+        gap: 80px;
     }
 
+    /* FORM */
+    section.formulario {
+        padding: 40PX 8%;
+    }
     /* SOBRE */
+    
     footer .flex {
         flex-direction: column;
         gap: 30px;
